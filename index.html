@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="header/chess_board_style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="header/jquery.js"></script>
+    <script src="header/chessboard.js"></script>
+    
+  </head>
+  <body>
+    <div>
+      <div id="board" style="float:left; width: 400px;" style="position:absolute"></div>
+      <canvas id="myCanvas" width="400" height="400" style="position:absolute; left:0; z-index:999; border:1px solid #d3d3d3;pointer-events:none;">
+    </div>
+    <div id="move-container">
+      <table id="movelist">
+        <tr>
+          <th>#</th>
+          <th id="m0" style="width:45%">White</th>
+          <th style="width:45%">Black</th>
+        </tr>
+      </table>
+
+    </div>
+    <div style="clear:both">
+      <button id="previous" >previous</button>
+      <button id="next">next</button>
+      <button id="restart">restart</button>
+      <button id="legal-move" style="background:IndianRed">hide legal move</button>
+      <button id="mode-switch" style="background:IndianRed">arrow drawing mode</button>
+      <button id="remove-arrow" style="background:IndianRed">remove arrow</button>
+      
+    </div>
+    <div>Hint: on touchscreens you can click start and end square to draw arrow</div>
+    <script src="script.js"></script>
+  </body>
+</html>
