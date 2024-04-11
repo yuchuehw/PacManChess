@@ -1,0 +1,42 @@
+html, body {touch-action: none;}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+.temporary.black-3c85d{background-color: DarkGray;}
+.temporary.white-1e1d7{background-color: Gainsboro;}
+
+#move-container{
+  float:right; 
+  width:calc(100vw - 450px); 
+  height:400px; 
+  overflow: auto; 
+}
+
+#movelist{
+  width:250px
+}
+
+
+/* element {
+	width: 49px;
+	height: 49px;
+	position: absolute;
+	z-index: 999;
+	opacity: 0.8;
+} */
